@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radiant Fork | A World of Flavours</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-dark: #c9a24d;
+      --dark: #1f1f1f;
+      --muted: #6b6b6b;
+      --light: #fafafa;
+      --radius: 20px;
+      --max-width: 1200px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 12px 30px;
+      border-radius: 30px;
+      margin-left: 12px;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("assets/images/hero1.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.15;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero-subtitle {
+      max-width: 600px;
+      margin: 20px auto 30px;
+      color: var(--muted);
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section.light {
+      background: var(--light);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    /* STATS */
+    .stats {
+      padding: 60px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-box {
+      padding: 30px;
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    }
+
+    .stat-box h3 {
+      color: var(--gold);
+      font-size: 32px;
+    }
+
+    /* SPECIALS */
+    .special-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .special-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+      transition: transform .3s ease, box-shadow .3s ease;
+      text-align: center;
+    }
+
+    .special-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,.12);
+    }
+
+    .special-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 16px;
+    }
+
+    /* CUISINES */
+    .cuisine-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+
+    .cuisine-tags span {
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-features .feature {
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    /* TESTIMONIAL */
+    .testimonial {
+      max-width: 700px;
+      margin: auto;
+      font-style: italic;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 12px;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    /* CTA */
+    .cta {
+      background:
+        linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)),
+        url("assets/images/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #eee;
+      padding: 50px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    footer p, footer a {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .stats-grid,
+      .special-grid,
+      .footer-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .btn-outline {
+        margin-left: 0;
+        margin-top: 12px;
+        display: inline-block;
+      }
+
+      .special-card img {
+        height: 180px;
+      }
+    }
+    /* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--dark);
+  transition: 0.3s;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+
+.mobile-menu a {
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f2f2;
+}
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .stats-grid,
+  .special-grid,
+  .footer-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">Radiant <span>Fork</span></div>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#specials">Specials</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn-gold">Order Now</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="menu.html" onclick="toggleMenu()">Menu</a>
+    <a href="#specials" onclick="toggleMenu()">Specials</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#contact" class="btn-gold" onclick="toggleMenu()">Order Now</a>
+  </div>
+</header>
+
+
+<section id="home" class="hero">
+  <div class="container">
+    <h1>A World of Flavours <span>on One Fork</span></h1>
+    <p class="hero-subtitle">
+      Premium multi-cuisine fast food crafted with quality, speed, and elegance.
+    </p>
+    <a href="menu.html" class="btn-gold">Order Now</a>
+    <a href="menu.html" class="btn-outline">View Menu</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-box"><h3>200+</h3><p>Dishes</p></div>
+    <div class="stat-box"><h3>10+</h3><p>Cuisines</p></div>
+    <div class="stat-box"><h3>5★</h3><p>Rating</p></div>
+    <div class="stat-box"><h3>Fast</h3><p>Delivery</p></div>
+  </div>
+</section>
+
+<section id="specials" class="section">
+  <div class="container">
+    <h2 class="section-title">Chef’s Specials</h2>
+    <div class="special-grid">
+      <div class="special-card">
+        <img src="assets/images/chicken_hakka_noodles.png" alt="">
+        <h4>Chicken Hakka Noodles</h4>
+      </div>
+      <div class="special-card">
+        <img src="assets/images/alfredo.jpg" alt="">
+        <h4>Alfredo Pasta</h4>
+      </div>
+      <div class="special-card">
+        <img src="assets/images/burger.jpg" alt="">
+        <h4>Signature Burger</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container center">
+    <h2 class="section-title">Explore Our Cuisines</h2>
+  <div class="cuisine-tags">
+  <span>Starters</span>
+  <span>Noodles</span>
+  <span>Soups</span>
+  <span>Sandwich</span>
+  <span>Rolls</span>
+  <span>Burger</span>
+  <span>Momos</span>
+  <span>Pizza</span>
+  <span>Hot Beverages</span>
+  <span>Ice Cream</span>
+  <span>Special Ice Cream</span>
+</div>
+
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div>
+      <h2>Why Radiant Fork?</h2>
+      <p>
+        Global cuisines, premium ingredients, and fast service —
+        delivering elegance in every bite.
+      </p>
+    </div>
+    <div class="about-features">
+      <div class="feature">✔ Premium Ingredients</div>
+      <div class="feature">✔ Hygienic Kitchens</div>
+      <div class="feature">✔ Consistent Taste</div>
+      <div class="feature">✔ Fast Delivery</div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2 class="section-title">What Customers Say</h2>
+    <blockquote class="testimonial">
+      “Radiant Fork is my go-to place for quality food.
+      The taste and speed are unmatched.”
+      <span>— Verified Customer</span>
+    </blockquote>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Hungry Yet?</h2>
+  <p>Order now and experience flavours from around the world.</p>
+  <a href="menu.html" class="btn-gold">Order Now</a>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>Radiant Fork</h4>
+      <p>Premium multi-cuisine fast food.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="menu.html">Menu</a>
+      <a href="#about">About</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: support@radiantfork.com</p>
+      <p>Phone: +91 9XXXXXXXXX</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025 Radiant Fork</p>
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>

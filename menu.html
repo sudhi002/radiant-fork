@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu | Radiant Fork</title>
+
+<meta name="description" content="Explore Radiant Fork’s premium multi-cuisine menu." />
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<style>
+:root{
+  --gold:#d4af37;--gold-dark:#c9a24d;--dark:#1f1f1f;
+  --muted:#6b6b6b;--radius:20px;--max-width:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;color:var(--dark);overflow-x:hidden}
+.container{max-width:var(--max-width);margin:auto;padding:0 20px}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:100}
+.nav-inner{display:flex;gap:12px;align-items:center;padding:16px 0}
+.logo{font-family:'Playfair Display',serif;font-size:26px}
+.logo span{color:var(--gold)}
+.search-box input,.price-sort{
+  padding:10px 14px;border-radius:20px;border:1px solid #ddd;width:100%
+}
+
+/* FILTERS */
+.filter-section{border-bottom:1px solid #eee}
+.filter-bar{display:flex;gap:10px;overflow-x:auto;padding:14px 0}
+.filter-btn{
+  padding:8px 16px;border-radius:20px;border:1px solid #ddd;
+  background:#fff;cursor:pointer;white-space:nowrap
+}
+.filter-btn.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+.diet-toggle{display:flex;gap:10px;padding-bottom:14px}
+.diet-toggle button{
+  flex:1;padding:8px;border-radius:20px;border:1px solid #ddd;background:#fff
+}
+.diet-toggle button.active{background:var(--gold);color:#fff}
+
+/* LAYOUT */
+.menu-layout{display:grid;grid-template-columns:1fr 340px;gap:40px;padding:32px 0}
+.section-title{font-family:'Playfair Display',serif;font-size:32px;margin-bottom:20px}
+
+/* MENU */
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.food-card{
+  background:#fff;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.08);
+  overflow:hidden;transition:.25s
+}
+.food-card:hover{transform:translateY(-4px)}
+.food-card img{width:100%;height:180px;object-fit:cover}
+.food-info{padding:16px}
+.price{color:var(--gold);font-weight:600;margin-bottom:10px}
+.food-info button{
+  width:100%;padding:10px;border-radius:20px;border:none;
+  background:var(--gold);color:#fff;cursor:pointer
+}
+.food-info button.added{
+  background:#e0e0e0;color:#333;cursor:not-allowed
+}
+
+/* PAGINATION */
+.pagination{display:flex;gap:8px;justify-content:center;margin:30px 0}
+.pagination button{
+  padding:6px 12px;border-radius:12px;border:1px solid #ddd;background:#fff
+}
+.pagination button.active{background:var(--gold);color:#fff}
+
+/* CART */
+.cart{
+  position:sticky;top:100px;height:calc(100vh - 140px);
+  background:#fff;padding:20px;border-radius:20px;
+  box-shadow:-6px 0 30px rgba(0,0,0,.1);
+  display:flex;flex-direction:column
+}
+.cart{
+  transition: transform 0.35s ease;
+}
+@media(max-width:900px){
+  .cart{
+    z-index:1000;
+  }
+}
+
+.cart-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.cart-close{background:none;border:none;font-size:20px;cursor:pointer}
+.cart-items{flex:1;overflow-y:auto}
+.cart-footer{border-top:1px solid #eee;padding-top:14px}
+.btn-gold{
+  width:100%;padding:12px;border-radius:30px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  border:none;color:#fff;cursor:pointer
+}
+
+/* MODAL */
+.modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.55);
+  display:none;align-items:center;justify-content:center;z-index:999
+}
+.modal.active{display:flex}
+.modal-box{
+  background:#fff;width:100%;max-width:420px;
+  border-radius:22px;padding:26px
+}
+.hidden{display:none}
+.modal-box input, .modal-box textarea{
+  width:100%;margin:8px 0;padding:10px;border-radius:12px;border:1px solid #ddd
+}
+.btn-cancel{background:none;border:none;color:#555;margin-top:10px}
+
+/* MOBILE */
+.cart-toggle{
+  position:fixed;bottom:20px;right:20px;
+  width:56px;height:56px;border-radius:50%;
+  background:var(--gold);color:#fff;border:none;font-size:22px;display:none
+}
+@media(max-width:900px){
+  .menu-layout{display:block}
+  .cart{
+    position:fixed;bottom:0;left:0;right:0;top:auto;
+    height:70vh;transform:translateY(100%);
+    border-radius:20px 20px 0 0;z-index:400
+  }
+  .cart.active{transform:translateY(0)}
+  .cart-toggle{display:block}
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">Radiant <span>Fork</span></div>
+    <div class="search-box"><input id="search" placeholder="Search dishes..." /></div>
+    <select id="priceSort" class="price-sort">
+      <option value="">Sort by Price</option>
+      <option value="low">Low → High</option>
+      <option value="high">High → Low</option>
+    </select>
+  </div>
+</header>
+
+<section class="filter-section">
+  <div class="container">
+ <div class="filter-bar">
+  <button class="filter-btn active" data-filter="All">All</button>
+  <button class="filter-btn" data-filter="Starters">Starters</button>
+  <button class="filter-btn" data-filter="Noodles">Noodles</button>
+  <button class="filter-btn" data-filter="Soups">Soups</button>
+  <button class="filter-btn" data-filter="Sandwich">Sandwich</button>
+  <button class="filter-btn" data-filter="Rolls">Rolls</button>
+  <button class="filter-btn" data-filter="Burger">Burger</button>
+  <button class="filter-btn" data-filter="Momos">Momos</button>
+  <button class="filter-btn" data-filter="Pizza">Pizza</button>
+  <button class="filter-btn" data-filter="Ice Cream">Ice Cream</button>
+</div>
+
+    <div class="diet-toggle">
+      <button id="vegToggle">🌱 Veg</button>
+      <button id="nonVegToggle">🍗 Non-Veg</button>
+    </div>
+  </div>
+</section>
+
+<main class="menu-layout container">
+
+<section>
+  <h2 class="section-title">Our Menu</h2>
+  <div id="menuGrid" class="menu-grid"></div>
+  <div id="pagination" class="pagination"></div>
+
+</section>
+  <section class="container">
+  <h3>Recommended for You</h3>
+  <div id="recommendGrid" class="menu-grid"></div>
+</section>
+
+<aside class="cart" id="cart">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <span id="cartCount">0 items</span>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+
+  <div id="cartItems" class="cart-items"></div>
+
+  <div class="cart-footer">
+    <p id="total">Total: ₹0</p>
+    <button class="btn-gold" id="checkoutBtn">
+      Pay <span id="payAmount"></span>
+    </button>
+  </div>
+</aside>
+
+</main>
+
+
+
+<button class="cart-toggle" onclick="toggleCart()">🛒</button>
+
+<!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-box">
+
+    <div id="step-address">
+      <h3>Delivery Address</h3>
+      <input id="name" placeholder="Full Name">
+      <input id="phone" placeholder="Phone Number">
+      <textarea id="address" placeholder="Address"></textarea>
+      <button type="button" class="btn-outline" onclick="fetchCurrentLocation()">
+  📍 Use Current Location
+</button>
+
+
+      <button class="btn-gold" onclick="goToPayment()">Continue</button>
+      <button class="btn-cancel" onclick="closeCheckout()">Cancel</button>
+    </div>
+
+    <div id="step-payment" class="hidden">
+      <h3>Payment Method</h3>
+      <label><input type="radio" name="payment" value="COD" checked> Cash on Delivery</label><br>
+      <label><input type="radio" name="payment" value="ONLINE"> Online Payment</label><br><br>
+
+     <button class="btn-gold" onclick="handlePayment()">Confirm Order</button>
+
+      <button class="btn-cancel" onclick="backToAddress()">Back</button>
+    </div>
+
+  </div>
+   <p id="orderSuccess" style="display:none;color:green;font-weight:500;margin-top:12px;">
+  ✅ Order placed successfully!
+</p>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
