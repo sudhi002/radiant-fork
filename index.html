@@ -44,7 +44,12 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
-
+@media (max-width: 768px) {
+  body::before {
+    background-size: 280px; /* smaller logo */
+    opacity: 0.12;          /* slightly lighter */
+  }
+}
     a {
       text-decoration: none;
       color: inherit;
