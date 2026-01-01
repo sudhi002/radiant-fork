@@ -25,12 +25,25 @@
       box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: var(--dark);
-      background: #fff;
-      line-height: 1.6;
-    }
+   body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+  background: #fff;
+}
+
+/* Logo watermark */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("assets/images/logo.jpg") no-repeat center;
+  background-size: 450px; /* adjust size */
+  opacity: 0.06; /* LOW opacity */
+  pointer-events: none;
+  z-index: -1;
+}
 
     a {
       text-decoration: none;
