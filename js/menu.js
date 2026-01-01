@@ -315,3 +315,14 @@ function renderRecommended() {
 window.addEventListener("load", () => {
   renderRecommended();
 });
+
+
+
+// Read category from URL
+const params = new URLSearchParams(window.location.search);
+const selectedCategory = params.get("category");
+
+if (selectedCategory) {
+  filterByCategory(selectedCategory);
+}
+
