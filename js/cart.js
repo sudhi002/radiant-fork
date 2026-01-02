@@ -136,8 +136,11 @@ function closeCheckout() {
   if (!modal) return;
 
   modal.classList.remove("active");
+
+  // reset to address step when closed
   backToAddress();
 }
+
 
 /* ===================== CHECKOUT STEPS ===================== */
 function goToPayment() {
@@ -164,6 +167,16 @@ function goToPayment() {
   document.getElementById("step-address").classList.add("hidden");
   document.getElementById("step-payment").classList.remove("hidden");
 }
+function backToAddress() {
+  const stepAddress = document.getElementById("step-address");
+  const stepPayment = document.getElementById("step-payment");
+
+  if (!stepAddress || !stepPayment) return;
+
+  stepPayment.classList.add("hidden");
+  stepAddress.classList.remove("hidden");
+}
+
 
 /* ===================== PAYMENT HANDLER ===================== */
 function handlePayment() {
@@ -266,7 +279,7 @@ function sendOrderToWhatsApp(items, paymentMode = "COD", paymentId = null) {
   }
 
   window.open(
-    `https://wa.me/916364800327?text=${encodeURIComponent(msg)}`,
+    `https://wa.me/919900347281?text=${encodeURIComponent(msg)}`,
     "_blank"
   );
 }
