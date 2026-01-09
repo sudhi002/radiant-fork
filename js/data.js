@@ -109,17 +109,18 @@ const products = [
 { id: 409, name: "Egg Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 410, name: "Egg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
 
+
 /* =========================
    STARTERS – VEG
 ========================= */
-{ id: 501, name: "Gobi Manchurian", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
-{ id: 502, name: "French Fries", category: "Starter", subCategory: "Veg", variants: [{ label: "250 gm", price: 69 }] },
-{ id: 503, name: "Veg Nuggets", category: "Starter", subCategory: "Veg", variants: [{ label: "6 Pieces", price: 59 }] },
-{ id: 504, name: "Potato Smiles", category: "Starter", subCategory: "Veg", variants: [{ label: "6 Pieces", price: 49 }] },
-{ id: 505, name: "Paneer Chilli Dry", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 506, name: "Paneer Chilli Gravy", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 507, name: "Gobi Chilli Dry", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
-{ id: 508, name: "Gobi Chilli Gravy", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 101, name: "Gobi Manchurian", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
+{ id: 102, name: "French Fries (250 gm)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
+{ id: 103, name: "Veg Nuggets (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 104, name: "Potato Smiles (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 49 }] },
+{ id: 105, name: "Paneer Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 106, name: "Paneer Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 107, name: "Gobi Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 108, name: "Gobi Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
 
 
 /* =========================
@@ -259,4 +260,5 @@ const products = [
 ];
 
 window.products = products;
+
 
