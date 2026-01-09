@@ -251,10 +251,15 @@ function finishOrder() {
   closeCheckout();
 }
 
+
 /* ===================== WHATSAPP ===================== */
 function sendOrderToWhatsApp(items, paymentMode = "COD", paymentId = null) {
   const addressData = JSON.parse(localStorage.getItem("radiantAddress"));
   const location = addressData?.location;
+
+  const DELIVERY_CHARGE = 20;
+  const itemsTotal = getTotalPrice();
+  const finalTotal = itemsTotal + DELIVERY_CHARGE;
 
   let msg = `🧾 *Radiant Fork Order*\n\n`;
 
@@ -271,7 +276,9 @@ function sendOrderToWhatsApp(items, paymentMode = "COD", paymentId = null) {
     msg += `• ${i.name} × ${i.qty} – ₹${i.price * i.qty}\n`;
   });
 
-  msg += `\n💰 Total: ₹${getTotalPrice()}\n`;
+  msg += `\n🧾 Subtotal: ₹${itemsTotal}\n`;
+  msg += `🚚 Delivery Charge: ₹${DELIVERY_CHARGE}\n`;
+  msg += `💰 *Total Payable: ₹${finalTotal}*\n`;
   msg += `💳 Payment: ${paymentMode}`;
 
   if (paymentId) {
@@ -283,6 +290,7 @@ function sendOrderToWhatsApp(items, paymentMode = "COD", paymentId = null) {
     "_blank"
   );
 }
+
 
 
 
