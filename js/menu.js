@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     recommendGrid.innerHTML = "";
 
-    const recommended = products.slice(0, 4);
+    const recommended = products.slice(0, 12);
 
     recommended.forEach(item => {
       const price = item.variants[0].price;
@@ -226,3 +226,4 @@ document.addEventListener("DOMContentLoaded", () => {
   renderRecommended();
 
 });
+
