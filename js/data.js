@@ -245,11 +245,10 @@ const products = [
     { label: "Large", price: 35 }
   ]
 },
-
 /* =========================
-   ICE CREAM
+   ICE CREAM (FIXED)
 ========================= */
-
+{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
 { id: 1603, name: "Butterscotch Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
 { id: 1604, name: "Blackcurrant Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
 { id: 1605, name: "Strawberry Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
@@ -265,8 +264,8 @@ const products = [
 
 
 
-
 window.products = products;
+
 
 
 
