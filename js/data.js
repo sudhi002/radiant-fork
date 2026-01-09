@@ -233,19 +233,19 @@ const products = [
 /* =========================
    ICE CREAM – VEG
 ========================= */
-{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1603, name: "Butterscotch Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1604, name: "Blackcurrant Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1605, name: "Strawberry Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1606, name: "Mango Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1607, name: "Plain Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1608, name: "Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1609, name: "Belgian Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1610, name: "Dry Fruit Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1611, name: "Vanilla Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1612, name: "Rich Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1613, name: "Kesar Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1614, name: "Tutti Frutti Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1603, name: "Butterscotch Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1604, name: "Blackcurrant Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1605, name: "Strawberry Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1606, name: "Mango Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1607, name: "Plain Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1608, name: "Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1609, name: "Belgian Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1610, name: "Dry Fruit Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1611, name: "Vanilla Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1612, name: "Rich Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35}] },
+{ id: 1613, name: "Kesar Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+{ id: 1614, name: "Tutti Frutti Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 
 
 
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
