@@ -234,17 +234,43 @@ const products = [
 
 
 
+
 /* =========================
    ICE CREAM
 ========================= */
-{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1602, name: "Belgium Chocolate Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
-
-
+{
+  id: 1603,
+  name: "Butterscotch Ice Cream",
+  category: "Ice Cream",
+  subCategory: "Dessert",
+  variants: [{ label: "Scoop", price: 30 }]
+},
+{
+  id: 1604,
+  name: "Blackcurrant Ice Cream",
+  category: "Ice Cream",
+  subCategory: "Dessert",
+  variants: [{ label: "Scoop", price: 30 }]
+},
+{
+  id: 1605,
+  name: "Strawberry Ice Cream",
+  category: "Ice Cream",
+  subCategory: "Dessert",
+  variants: [{ label: "Scoop", price: 30 }]
+},
+{
+  id: 1614,
+  name: "Tutti Frutti Ice Cream",
+  category: "Ice Cream",
+  subCategory: "Dessert",
+  variants: [{ label: "Scoop", price: 30 }]
+}
 
 ];
 
 window.products = products;
+
 
 
 
