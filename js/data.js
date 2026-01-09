@@ -230,46 +230,55 @@ const products = [
 { id: 1110, name: "Crispy Chicken Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
 
 
+/* =========================
+   ICE CREAM – VEG
+========================= */
+{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1603, name: "Butterscotch Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1604, name: "Blackcurrant Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1605, name: "Strawberry Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1606, name: "Mango Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1607, name: "Plain Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1608, name: "Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1609, name: "Belgian Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1610, name: "Dry Fruit Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1611, name: "Vanilla Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1612, name: "Rich Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1613, name: "Kesar Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1614, name: "Tutti Frutti Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
 
 
 
 
 
 /* =========================
-   ICE CREAM
+   MOCKTAILS & BEVERAGES – VEG
 ========================= */
-{
-  id: 1603,
-  name: "Butterscotch Ice Cream",
-  category: "Ice Cream",
-  subCategory: "Veg",
-  variants: [{ label: "Scoop", price: 30 }]
-},
-{
-  id: 1604,
-  name: "Blackcurrant Ice Cream",
-  category: "Ice Cream",
-  subCategory: "Veg",
-  variants: [{ label: "Scoop", price: 30 }]
-},
-{
-  id: 1605,
-  name: "Strawberry Ice Cream",
-  category: "Ice Cream",
-  subCategory: "Veg",
-  variants: [{ label: "Scoop", price: 30 }]
-},
-{
-  id: 1614,
-  name: "Tutti Frutti Ice Cream",
-  category: "Ice Cream",
-  subCategory: "Veg",
-  variants: [{ label: "Scoop", price: 30 }]
-}
+
+/* --- MOCKTAILS --- */
+{ id: 1701, name: "Strawberry Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+{ id: 1702, name: "Orange Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+{ id: 1703, name: "Black Currant Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+{ id: 1704, name: "Lemon Soda", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+{ id: 1705, name: "Virgin Mojito", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+
+/* --- MILK SHAKES --- */
+{ id: 1706, name: "Milk Shake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 55 }] },
+{ id: 1707, name: "Strawberry Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
+{ id: 1708, name: "Mango Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
+{ id: 1709, name: "Black Currant Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
+{ id: 1710, name: "Chocolate Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
+
+/* --- COLD COFFEE --- */
+{ id: 1711, name: "Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 79 }] },
+{ id: 1712, name: "Strong Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 99 }] }
+
+
 
 ];
 
 window.products = products;
+
 
 
 
