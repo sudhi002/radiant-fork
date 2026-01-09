@@ -192,38 +192,44 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ================= RECOMMENDED ================= */
-  function renderRecommended() {
-    if (!recommendGrid) return;
+ function renderRecommended() {
+  if (!recommendGrid) return;
 
-    recommendGrid.innerHTML = "";
+  recommendGrid.innerHTML = "";
 
-    const recommended = products.slice(0, 12);
+  // Shuffle products randomly
+  const shuffled = [...products].sort(() => 0.5 - Math.random());
 
-    recommended.forEach(item => {
-      const price = item.variants[0].price;
+  // Pick first 4 after shuffle
+  const recommended = shuffled.slice(0, 4);
 
-      const card = document.createElement("div");
-      card.className = "food-card";
+  recommended.forEach(item => {
+    const price = item.variants[0].price;
 
-      card.innerHTML = `
-        <div class="food-info">
-          <h4>${item.name}</h4>
-          <div class="price">₹${price}</div>
-          <button onclick="addToCart(${item.id}, ${price})">
-            Add to Cart
-          </button>
-        </div>
-      `;
+    const card = document.createElement("div");
+    card.className = "food-card";
 
-      recommendGrid.appendChild(card);
-    });
+    card.innerHTML = `
+      <div class="food-info">
+        <h4>${item.name}</h4>
+        <div class="price">₹${price}</div>
+        <button onclick="addToCart(${item.id}, ${price})">
+          Add to Cart
+        </button>
+      </div>
+    `;
 
-    syncMenuButtons?.();
-  }
+    recommendGrid.appendChild(card);
+  });
+
+  syncMenuButtons?.();
+}
+
 
   /* ================= INIT ================= */
   applyFilters();
   renderRecommended();
 
 });
+
 
