@@ -3,77 +3,77 @@ const products = [
 /* =========================
    MOMOS – VEG
 ========================= */
-{ id: 201, name: "Veg Steam Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 49 }] },
-{ id: 202, name: "Veg Steam Schezwan Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 60 }] },
-{ id: 203, name: "Veg Fried Schezwan Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
-{ id: 204, name: "Veg Peri Peri Steam Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
+{ id: 201, name: "Veg Steam Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 202, name: "Veg Steam Schezwan Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
+{ id: 203, name: "Veg Fried Schezwan Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 204, name: "Veg Peri Peri Steam Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
 
 /* =========================
    MOMOS – NON VEG
 ========================= */
-{ id: 205, name: "Chicken Steam Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 69 }] },
-{ id: 206, name: "Chicken Steam Schezwan Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 75 }] },
-{ id: 207, name: "Chicken Fried Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 75 }] },
-{ id: 208, name: "Chicken Fried Schezwan Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 209, name: "Chicken Peri Peri Steam Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 75 }] },
+{ id: 205, name: "Chicken Steam Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 206, name: "Chicken Steam Schezwan Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 207, name: "Chicken Fried Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 208, name: "Chicken Fried Schezwan Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 209, name: "Chicken Peri Peri Steam Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
 
 /* =========================
    PIZZAS – VEG
 ========================= */
 { id: 301, name: "Corn Capsicum Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 99 },
-  { label: "Medium", price: 149 },
-  { label: "Large", price: 199 }
+  { label: "Regular", price:155  },
+  { label: "large", price:200  }
+  
 ]},
 { id: 302, name: "Paneer Loaded Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 159 },
-  { label: "Medium", price: 239 },
-  { label: "Large", price: 329 }
+  { label: "Regular", price: 195 },
+  { label: "large", price: 269}
+ 
 ]},
 { id: 303, name: "Cheese Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 89 },
-  { label: "Medium", price: 129 },
-  { label: "Large", price: 189 }
+  { label: "Regular", price: 139 },
+  { label: "large", price: 175 }
+  
 ]},
 { id: 304, name: "Paneer Tikka Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 139 },
-  { label: "Medium", price: 199 },
-  { label: "Large", price: 289 }
+  { label: "Regular", price: 165 },
+  { label: "large", price: 270 }
+ 
 ]},
 
 { id: 306, name: "Peri Peri Paneer Tikka Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 139 },
-  { label: "Medium", price: 199 },
-  { label: "Large", price: 289 }
+  { label: "Regular", price: 165 },
+  { label: "large", price: 275 }
+  
 ]},
 { id: 307, name: "BBQ Paneer Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 165 },
-  { label: "Medium", price: 239 },
-  { label: "Large", price: 329 }
+  { label: "Regular", price: 185 },
+  { label: "large", price: 295 }
+ 
 ]},
 
 /* =========================
    PIZZAS – NON VEG
 ========================= */
 { id: 308, name: "Peri Peri Chicken Tikka Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 149 },
-  { label: "Medium", price: 219 },
-  { label: "Large", price: 299 }
+  { label: "Regular", price: 175 },
+  
+  { label: "Large", price: 295 }
 ]},
 { id: 309, name: "BBQ Chicken Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 175 },
-  { label: "Medium", price: 249 },
-  { label: "Large", price: 339 }
+  { label: "Regular", price: 189 },
+  
+  { label: "Large", price: 295 }
 ]},
 { id: 310, name: "Chicken Loaded Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 169 },
-  { label: "Medium", price: 249 },
-  { label: "Large", price: 339 }
+  { label: "Regular", price: 189 },
+  
+  { label: "Large", price: 295 }
 ]},
 { id: 311, name: "Crispy Chicken Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 149 },
-  { label: "Medium", price: 219 },
-  { label: "Large", price: 299 }
+  { label: "Regular", price: 189 },
+ 
+  { label: "Large", price: 295 }
 ]},
 /* =========================
    PIZZA – NON VEG
@@ -84,9 +84,9 @@ const products = [
   category: "Pizza",
   subCategory: "Non-Veg",
   variants: [
-    { label: "Regular", price: 149 },
-    { label: "Medium", price: 219 },
-    { label: "Large", price: 299 }
+    { label: "Regular", price: 175 },
+    
+    { label: "Large", price: 279 }
   ]
 },
 
@@ -94,32 +94,33 @@ const products = [
 /* =========================
    FRIED RICE – VEG
 ========================= */
-{ id: 401, name: "Veg Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 402, name: "Veg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 403, name: "Gobi Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 404, name: "Gobi Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 99 }] },
-{ id: 405, name: "Paneer Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 99 }] },
-{ id: 406, name: "Paneer Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 129 }] },
+{ id: 401, name: "Veg Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 95 }] },
+{ id: 402, name: "Veg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 105 }] },
+{ id: 403, name: "Gobi Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 105 }] },
+{ id: 404, name: "Gobi Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 405, name: "Paneer Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 406, name: "Paneer Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 145 }] },
 
 /* =========================
    FRIED RICE – NON VEG
 ========================= */
-{ id: 407, name: "Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
-{ id: 408, name: "Egg Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
-{ id: 409, name: "Egg Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
-{ id: 410, name: "Egg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 407, name: "Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 119 }] },
+{ id: 408, name: "Egg Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 409, name: "Egg Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 410, name: "Egg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 411, name: "Egg Chicken Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
 
 
 /* =========================
    STARTERS – VEG
 ========================= */
-{ id: 101, name: "Gobi Manchurian", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
-{ id: 102, name: "French Fries (250 gm)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
-{ id: 103, name: "Veg Nuggets (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
-{ id: 104, name: "Potato Smiles (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 49 }] },
-{ id: 105, name: "Paneer Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 106, name: "Paneer Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 107, name: "Gobi Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 101, name: "Gobi Manchurian", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 102, name: "French Fries (250 gm)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
+{ id: 103, name: "Veg Nuggets (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
+{ id: 104, name: "Potato Smiles (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
+{ id: 105, name: "Paneer Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price:115 }] },
+{ id: 106, name: "Paneer Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 105 }] },
+{ id: 107, name: "Gobi Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price:  }] },
 { id: 108, name: "Gobi Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
 
 
@@ -260,4 +261,5 @@ const products = [
 ];
 
 window.products = products;
+
 
