@@ -113,14 +113,14 @@ const products = [
 /* =========================
    STARTERS – VEG
 ========================= */
-{ id: 101, name: "Gobi Manchurian", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
-{ id: 102, name: "French Fries (250 gm)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
-{ id: 103, name: "Veg Nuggets (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
-{ id: 104, name: "Potato Smiles (6 pcs)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 49 }] },
-{ id: 105, name: "Paneer Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 106, name: "Paneer Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 107, name: "Gobi Chilli (Dry)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
-{ id: 108, name: "Gobi Chilli (Gravy)", category: "Starters", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 101, name: "Gobi Manchurian", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
+{ id: 102, name: "French Fries (250 gm)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
+{ id: 103, name: "Veg Nuggets (6 pcs)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 104, name: "Potato Smiles (6 pcs)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 49 }] },
+{ id: 105, name: "Paneer Chilli (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 106, name: "Paneer Chilli (Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 107, name: "Gobi Chilli (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 108, name: "Gobi Chilli (Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
 
 
 /* =========================
@@ -249,16 +249,24 @@ const products = [
 /* =========================
    ICE CREAM
 ========================= */
-{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1602, name: "Belgium Chocolate Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
 
-/* =========================
-   RADIANT FORK SPECIAL ICE CREAM
-========================= */
-{ id: 1701, name: "Gadbad Ice Cream", category: "Special Ice Cream", subCategory: "Dessert", variants: [{ label: "Full", price: 99 }] }
+{ id: 1603, name: "Butterscotch Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1604, name: "Blackcurrant Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1605, name: "Strawberry Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1606, name: "Mango Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1607, name: "Plain Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1608, name: "Pista Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1609, name: "Belgian Chocolate Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1610, name: "Dry Fruit Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1611, name: "Vanilla Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1612, name: "Rich Chocolate Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1613, name: "Kesar Pista Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] },
+{ id: 1614, name: "Tutti Frutti Ice Cream", category: "Ice Cream", subCategory: "Dessert", variants: [{ label: "Scoop", price: 30 }] }
 
-];
+
+
 
 window.products = products;
+
 
 
