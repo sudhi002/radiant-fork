@@ -226,10 +226,12 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
 
+
   /* ================= INIT ================= */
   applyFilters();
   renderRecommended();
 
 });
+
 
 
