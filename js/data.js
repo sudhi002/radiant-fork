@@ -3,52 +3,52 @@ const products = [
 /* =========================
    MOMOS – VEG
 ========================= */
-{ id: 201, name: "Veg Steam Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
-{ id: 202, name: "Veg Steam Schezwan Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
-{ id: 203, name: "Veg Fried Schezwan Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 204, name: "Veg Peri Peri Steam Momos", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 201, name: "Veg Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
+{ id: 202, name: "Veg Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
+{ id: 203, name: "Veg Fried Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 204, name: "Veg Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
 
 /* =========================
    MOMOS – NON VEG
 ========================= */
-{ id: 205, name: "Chicken Steam Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 206, name: "Chicken Steam Schezwan Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
-{ id: 207, name: "Chicken Fried Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
-{ id: 208, name: "Chicken Fried Schezwan Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 209, name: "Chicken Peri Peri Steam Momos", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 205, name: "Chicken Steam Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 206, name: "Chicken Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 207, name: "Chicken Fried Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 208, name: "Chicken Fried Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 209, name: "Chicken Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
 
 /* =========================
    PIZZAS – VEG
 ========================= */
 { id: 301, name: "Corn Capsicum Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price:155  },
-  { label: "large", price:200  }
+  { label: "Regular-8in", price:155  },
+  { label: "large-10in", price:200  }
   
 ]},
 { id: 302, name: "Paneer Loaded Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 195 },
-  { label: "large", price: 269}
+  { label: "Regular-8in", price: 195 },
+  { label: "large-10in", price: 269}
  
 ]},
 { id: 303, name: "Cheese Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 139 },
-  { label: "large", price: 175 }
+  { label: "Regular-8in", price: 139 },
+  { label: "large-10in", price: 175 }
   
 ]},
 { id: 304, name: "Paneer Tikka Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 165 },
-  { label: "large", price: 270 }
+  { label: "Regular-8in", price: 165 },
+  { label: "large-10in", price: 270 }
  
 ]},
 
 { id: 306, name: "Peri Peri Paneer Tikka Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 165 },
+  { label: "Regular-8in", price: 165 },
   { label: "large", price: 275 }
   
 ]},
 { id: 307, name: "BBQ Paneer Pizza", category: "Pizza", subCategory: "Veg", variants: [
-  { label: "Regular", price: 185 },
-  { label: "large", price: 295 }
+  { label: "Regular-8in", price: 185 },
+  { label: "large-10in", price: 295 }
  
 ]},
 
@@ -56,24 +56,24 @@ const products = [
    PIZZAS – NON VEG
 ========================= */
 { id: 308, name: "Peri Peri Chicken Tikka Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 175 },
+  { label: "Regular-8in", price: 175 },
   
-  { label: "Large", price: 295 }
+  { label: "Large-10in", price: 295 }
 ]},
 { id: 309, name: "BBQ Chicken Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 189 },
+  { label: "Regular-8in", price: 189 },
   
-  { label: "Large", price: 295 }
+  { label: "Large-10in", price: 295 }
 ]},
 { id: 310, name: "Chicken Loaded Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 189 },
+  { label: "Regular-8in", price: 189 },
   
-  { label: "Large", price: 295 }
+  { label: "Large-10in", price: 295 }
 ]},
 { id: 311, name: "Crispy Chicken Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
-  { label: "Regular", price: 189 },
+  { label: "Regular-8in", price: 189 },
  
-  { label: "Large", price: 295 }
+  { label: "Large-10in", price: 295 }
 ]},
 /* =========================
    PIZZA – NON VEG
@@ -84,9 +84,9 @@ const products = [
   category: "Pizza",
   subCategory: "Non-Veg",
   variants: [
-    { label: "Regular", price: 175 },
+    { label: "Regular-8in", price: 175 },
     
-    { label: "Large", price: 279 }
+    { label: "Large-10in", price: 279 }
   ]
 },
 
@@ -118,8 +118,8 @@ const products = [
 { id: 102, name: "French Fries (250 gm)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
 { id: 103, name: "Veg Nuggets (6 pcs)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
 { id: 104, name: "Potato Smiles (6 pcs)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
-{ id: 105, name: "Paneer Chilli (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price:105 }] },
-{ id: 106, name: "Paneer Chilli (Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 110 }] },
+{ id: 105, name: "Paneer Chilli 6pc (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price:105 }] },
+{ id: 106, name: "Paneer Chilli 6pc(Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 110 }] },
 { id: 107, name: "Gobi Chilli (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
 { id: 108, name: "Gobi Chilli (Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
 
@@ -127,17 +127,17 @@ const products = [
 /* =========================
    STARTERS – NON VEG
 ========================= */
-{ id: 509, name: "Chilli Chicken Dry", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95}] },
-{ id: 510, name: "Chilli Chicken Gravy", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 99 }] },
-{ id: 511, name: "Dragon Chicken", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
-{ id: 512, name: "Chicken Lollipop", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 185 }] },
+{ id: 509, name: "Chilli Chicken Dry 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95}] },
+{ id: 510, name: "Chilli Chicken Gravy 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 99 }] },
+{ id: 511, name: "Dragon Chicken 10pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 512, name: "Chicken Lollipop 5pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 185 }] },
 { id: 513, name: "Green Chilli Chicken", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
-{ id: 514, name: "Ginger Chicken", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 129 }] },
-{ id: 515, name: "Lemon Chicken", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
-{ id: 516, name: "Fried Chicken Lollipop", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 185 }] },
-{ id: 517, name: "Chicken Strips", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 139 }] },
-{ id: 518, name: "Chicken Nuggets", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "6 Pieces", price:85  }] },
-{ id: 519, name: "Chicken Popcorn", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "12 Pieces", price: 85 }] },
+{ id: 514, name: "Ginger Chicken 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 129 }] },
+{ id: 515, name: "Lemon Chicken 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 516, name: "Fried Chicken Lollipop 5pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 185 }] },
+{ id: 517, name: "Chicken Strips 5pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 139 }] },
+{ id: 518, name: "Chicken Nuggets 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "6 Pieces", price:85  }] },
+{ id: 519, name: "Chicken Popcorn 12pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "12 Pieces", price: 85 }] },
 /* =========================
    CHICKEN BUCKETS
 ========================= */
@@ -147,8 +147,8 @@ const products = [
   category: "Starter", 
   subCategory: "Non-Veg", 
   variants: [
-    { label: "Half", price: 315 },
-    { label: "Full", price: 565 }
+    { label: "Half 5pc", price: 315 },
+    { label: "Full 10pc", price: 565 }
   ] 
 },
 
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
