@@ -144,7 +144,7 @@ const products = [
 { 
   id: 801, 
   name: "Chicken Bucket", 
-  category: "Chicken Bucket", 
+  category: "Starter", 
   subCategory: "Non-Veg", 
   variants: [
     { label: "Half", price: 315 },
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
