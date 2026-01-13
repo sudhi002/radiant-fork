@@ -104,11 +104,11 @@ const products = [
 /* =========================
    FRIED RICE – NON VEG
 ========================= */
-{ id: 407, name: "Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 119 }] },
-{ id: 408, name: "Egg Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
-{ id: 409, name: "Egg Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 407, name: "Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 109 }] },
+{ id: 408, name: "Egg Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
+{ id: 409, name: "Egg Chicken Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
 { id: 410, name: "Egg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
-{ id: 411, name: "Egg Chicken Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
+{ id: 411, name: "Egg Chicken Schezwan Fried Rice", category: "Fried Rice", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
 
 
 /* =========================
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
