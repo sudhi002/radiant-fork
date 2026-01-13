@@ -129,14 +129,14 @@ const products = [
 ========================= */
 { id: 509, name: "Chilli Chicken Dry 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95}] },
 { id: 510, name: "Chilli Chicken Gravy 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 99 }] },
-{ id: 511, name: "Dragon Chicken 10pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 511, name: "Dragon Chicken 10pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
 { id: 512, name: "Chicken Lollipop 5pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 185 }] },
 { id: 513, name: "Green Chilli Chicken", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
 { id: 514, name: "Ginger Chicken 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 129 }] },
 { id: 515, name: "Lemon Chicken 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 516, name: "Fried Chicken Lollipop 5pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 185 }] },
 { id: 517, name: "Chicken Strips 5pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "Full", price: 139 }] },
-{ id: 518, name: "Chicken Nuggets 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "6 Pieces", price:85  }] },
+{ id: 518, name: "Chicken Nuggets 6pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "6 Pieces", price:95  }] },
 { id: 519, name: "Chicken Popcorn 12pc", category: "Starter", subCategory: "Non-Veg", variants: [{ label: "12 Pieces", price: 85 }] },
 /* =========================
    CHICKEN BUCKETS
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
