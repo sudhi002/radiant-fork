@@ -256,11 +256,11 @@ const products = [
 ========================= */
 
 /* --- MOCKTAILS --- */
-{ id: 1701, name: "Strawberry Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
-{ id: 1702, name: "Orange Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
-{ id: 1703, name: "Black Currant Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+{ id: 1701, name: "Strawberry Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
+{ id: 1702, name: "Orange Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
+{ id: 1703, name: "Black Currant Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
 { id: 1704, name: "Lemon Soda", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
-{ id: 1705, name: "Virgin Mojito", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
+{ id: 1705, name: "Virgin Mojito", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 50 }] },
 
 /* --- MILK SHAKES --- */
 { id: 1706, name: "Milk Shake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 55 }] },
@@ -270,14 +270,15 @@ const products = [
 { id: 1710, name: "Chocolate Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
 
 /* --- COLD COFFEE --- */
-{ id: 1711, name: "Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 79 }] },
-{ id: 1712, name: "Strong Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 99 }] }
+{ id: 1711, name: "Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 85 }] },
+{ id: 1712, name: "Strong Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 105 }] }
 
 
 
 ];
 
 window.products = products;
+
 
 
 
