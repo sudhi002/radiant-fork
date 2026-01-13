@@ -156,11 +156,11 @@ const products = [
 /* =========================
    NOODLES
 ========================= */
-{ id: 601, name: "Veg Hakka Noodles", category: "Noodles", subCategory: "Veg", variants: [{ label: "Full", price: 115 }] },
-{ id: 602, name: "Chicken Hakka Noodles", category: "Noodles", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
-{ id: 603, name: "Egg Hakka Noodles", category: "Noodles", subCategory: "Non-Veg", variants: [{ label: "Full", price: 129 }] },
-{ id: 604, name: "Paneer Hakka Noodles", category: "Noodles", subCategory: "Veg", variants: [{ label: "Full", price: 145 }] },
-{ id: 605, name: "Egg  Chicken Hakka Noodles", category: "Noodles", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
+{ id: 601, name: "Veg Hakka Noodles", category: "Noodles", subCategory: "Veg", variants: [{ label: "Full", price: 105 }] },
+{ id: 602, name: "Chicken Hakka Noodles", category: "Noodles", subCategory: "Non-Veg", variants: [{ label: "Full", price: 125 }] },
+{ id: 603, name: "Egg Hakka Noodles", category: "Noodles", subCategory: "Non-Veg", variants: [{ label: "Full", price: 119 }] },
+{ id: 604, name: "Paneer Hakka Noodles", category: "Noodles", subCategory: "Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 605, name: "Egg  Chicken Hakka Noodles", category: "Noodles", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
    
 
 /* =========================
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
