@@ -148,7 +148,7 @@ const products = [
   subCategory: "Non-Veg", 
   variants: [
     { label: "Half 5pc", price: 315 },
-    { label: "Full 10pc", price: 565 }
+    { label: "Full 10pc", price: 575 }
   ] 
 },
 
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
