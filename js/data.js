@@ -205,9 +205,9 @@ const products = [
 /* =========================
    ROLLS – NON VEG
 ========================= */
-{ id: 1005, name: "Chicken Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 105 }] },
-{ id: 1006, name: "Chicken Cheese Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
-{ id: 1007, name: "Crispy Chicken Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 109 }] },
+{ id: 1005, name: "Chicken Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 1006, name: "Chicken Cheese Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 105 }] },
+{ id: 1007, name: "Crispy Chicken Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 119 }] },
 { id: 1008, name: "Crispy Egg Chicken Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 119 }] },
 { id: 1009, name: "Egg Chicken Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 1019, name: "Egg  Roll", category: "Roll", subCategory: "Non-Veg", variants: [{ label: "Full", price:105 }] },
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
