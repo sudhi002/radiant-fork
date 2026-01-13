@@ -181,7 +181,7 @@ const products = [
 ========================= */
 { id: 901, name: "Veg Grill Sandwich", category: "Sandwich", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
 { id: 902, name: "Veg Cheese Grill Sandwich", category: "Sandwich", subCategory: "Veg", variants: [{ label: "Full", price: 95 }] },
-{ id: 903, name: "Paneer Sandwich", category: "Sandwich", subCategory: "Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 903, name: "Paneer Sandwich", category: "Sandwich", subCategory: "Veg", variants: [{ label: "Full", price: 125 }] },
 { id: 904, name: "Paneer Cheese Sandwich", category: "Sandwich", subCategory: "Veg", variants: [{ label: "Full", price: 135 }] },
 
 /* =========================
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
