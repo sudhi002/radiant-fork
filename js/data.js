@@ -215,9 +215,9 @@ const products = [
    BURGER – VEG
 ========================= */
 { id: 1101, name: "Paneer Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 119 }] },
-{ id: 1102, name: "Veg Crispy Cheese Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 95 }] },
-{ id: 1103, name: "Veg Paneer Crispy Cheese Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 125 }] },
-{ id: 1104, name: "Veg Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 1102, name: "Veg Crispy Cheese Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 1103, name: "Veg Paneer Crispy Cheese Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 135 }] },
+{ id: 1104, name: "Veg Burger", category: "Burger", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
 
 /* =========================
    BURGER – NON VEG
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
