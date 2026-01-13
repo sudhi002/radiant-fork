@@ -96,7 +96,7 @@ const products = [
 ========================= */
 { id: 401, name: "Veg Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 95 }] },
 { id: 402, name: "Veg Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 105 }] },
-{ id: 403, name: "Gobi Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 105 }] },
+{ id: 403, name: "Gobi Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 404, name: "Gobi Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 405, name: "Paneer Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 135 }] },
 { id: 406, name: "Paneer Schezwan Fried Rice", category: "Fried Rice", subCategory: "Veg", variants: [{ label: "Full", price: 145 }] },
@@ -224,8 +224,8 @@ const products = [
 ========================= */
 { id: 1105, name: "Chicken Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
 { id: 1106, name: "Chicken Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 105 }] },
-{ id: 1107, name: "Chicken Peri Peri Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 105 }] },
-{ id: 1108, name: "Chicken Peri Peri Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 1107, name: "Chicken Peri Peri Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
+{ id: 1108, name: "Chicken Peri Peri Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 105 }] },
 { id: 1109, name: "Crispy Chicken Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
 { id: 1110, name: "Crispy Chicken Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
 
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
