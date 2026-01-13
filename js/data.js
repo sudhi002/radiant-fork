@@ -118,8 +118,8 @@ const products = [
 { id: 102, name: "French Fries (250 gm)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
 { id: 103, name: "Veg Nuggets (6 pcs)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
 { id: 104, name: "Potato Smiles (6 pcs)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
-{ id: 105, name: "Paneer Chilli 6pc (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price:105 }] },
-{ id: 106, name: "Paneer Chilli 6pc(Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 110 }] },
+{ id: 105, name: "Paneer Chilli 6pc (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price:115 }] },
+{ id: 106, name: "Paneer Chilli 6pc(Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 119 }] },
 { id: 107, name: "Gobi Chilli (Dry)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
 { id: 108, name: "Gobi Chilli (Gravy)", category: "Starter", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
 
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
