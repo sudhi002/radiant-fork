@@ -200,7 +200,7 @@ const products = [
 { id: 1002, name: "Veg Cheese Roll", category: "Roll", subCategory: "Veg", variants: [{ label: "Full", price: 95 }] },
 { id: 1003, name: "Paneer Roll", category: "Roll", subCategory: "Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 1004, name: "Paneer Cheese Roll", category: "Roll", subCategory: "Veg", variants: [{ label: "Full", price: 125 }] },
-{ id: 1012, name: "Paneer Schezwan Roll", category: "Roll", subCategory: "Veg", variants: [{ label: "Full", price: 119 }] },   
+{ id: 1012, name: "Paneer Schezwan Roll", category: "Roll", subCategory: "Veg", variants: [{ label: "Full", price: 129 }] },   
 
 /* =========================
    ROLLS – NON VEG
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
