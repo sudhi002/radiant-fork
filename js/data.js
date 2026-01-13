@@ -4,18 +4,18 @@ const products = [
    MOMOS – VEG
 ========================= */
 { id: 201, name: "Veg Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
-{ id: 202, name: "Veg Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
-{ id: 203, name: "Veg Fried Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 204, name: "Veg Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 202, name: "Veg Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 203, name: "Veg Fried Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 204, name: "Veg Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 89 }] },
 
 /* =========================
    MOMOS – NON VEG
 ========================= */
-{ id: 205, name: "Chicken Steam Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 206, name: "Chicken Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
-{ id: 207, name: "Chicken Fried Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 205, name: "Chicken Steam Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 89 }] },
+{ id: 206, name: "Chicken Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
+{ id: 207, name: "Chicken Fried Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
 { id: 208, name: "Chicken Fried Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 89 }] },
-{ id: 209, name: "Chicken Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 85 }] },
+{ id: 209, name: "Chicken Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Non-Veg", variants: [{ label: "Full", price: 95 }] },
 
 /* =========================
    PIZZAS – VEG
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
