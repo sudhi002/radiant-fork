@@ -227,7 +227,7 @@ const products = [
 { id: 1107, name: "Chicken Peri Peri Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 115 }] },
 { id: 1108, name: "Chicken Peri Peri Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 105 }] },
 { id: 1109, name: "Crispy Chicken Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 135 }] },
-{ id: 1110, name: "Crispy Chicken Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 145 }] },
+{ id: 1110, name: "Crispy Chicken Cheese Burger", category: "Burger", subCategory: "Non-Veg", variants: [{ label: "Full", price: 155 }] },
 
 
 /* =========================
@@ -278,6 +278,7 @@ const products = [
 ];
 
 window.products = products;
+
 
 
 
