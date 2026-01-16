@@ -6,7 +6,8 @@ const products = [
 { id: 201, name: "Veg Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 59 }] },
 { id: 202, name: "Veg Steam Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 69 }] },
 { id: 203, name: "Veg Fried Schezwan Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
-{ id: 204, name: "Veg Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 79 }] },
+{ id: 204, name: "Veg Peri Peri Steam Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 65 }] },
+{ id: 210, name: "Veg Fried Momos-6pc", category: "Mo-Mo", subCategory: "Veg", variants: [{ label: "Full", price: 75 }] },
 
 /* =========================
    MOMOS – NON VEG
@@ -27,7 +28,7 @@ const products = [
 ]},
 { id: 302, name: "Paneer Loaded Pizza", category: "Pizza", subCategory: "Veg", variants: [
   { label: "Regular-8in", price: 189 },
-  { label: "large-10in", price: 269}
+  { label: "large-10in", price: 275}
  
 ]},
 { id: 303, name: "Cheese Pizza", category: "Pizza", subCategory: "Veg", variants: [
@@ -48,7 +49,7 @@ const products = [
 ]},
 { id: 307, name: "BBQ Paneer Pizza", category: "Pizza", subCategory: "Veg", variants: [
   { label: "Regular-8in", price: 185 },
-  { label: "large-10in", price: 275 }
+  { label: "large-10in", price: 269 }
  
 ]},
 
@@ -73,7 +74,7 @@ const products = [
 { id: 311, name: "Crispy Chicken Pizza", category: "Pizza", subCategory: "Non-Veg", variants: [
   { label: "Regular-8in", price: 189 },
  
-  { label: "Large-10in", price: 255 }
+  { label: "Large-10in", price: 259 }
 ]},
 /* =========================
    PIZZA – NON VEG
@@ -86,7 +87,7 @@ const products = [
   variants: [
     { label: "Regular-8in", price: 175 },
     
-    { label: "Large-10in", price: 259 }
+    { label: "Large-10in", price: 255 }
   ]
 },
 
@@ -233,23 +234,16 @@ const products = [
 /* =========================
    ICE CREAM – VEG
 ========================= */
-{ id: 1601, name: "Raj Bhog Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
+
 { id: 1603, name: "Butterscotch Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1604, name: "Blackcurrant Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1605, name: "Strawberry Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1606, name: "Mango Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
-{ id: 1607, name: "Plain Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
-{ id: 1608, name: "Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1609, name: "Belgian Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1610, name: "Dry Fruit Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1611, name: "Vanilla Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 30 }] },
-{ id: 1612, name: "Rich Chocolate Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35}] },
 { id: 1613, name: "Kesar Pista Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
 { id: 1614, name: "Tutti Frutti Ice Cream", category: "Ice Cream", subCategory: "Veg", variants: [{ label: "Scoop", price: 35 }] },
-
-
-
-
 
 /* =========================
    MOCKTAILS & BEVERAGES – VEG
@@ -261,13 +255,18 @@ const products = [
 { id: 1703, name: "Black Currant Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
 { id: 1704, name: "Lemon Soda", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 45 }] },
 { id: 1705, name: "Virgin Mojito", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 50 }] },
-
+{ id: 1713, name: "Mango Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
+{ id: 1714, name: "Pineapple Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
+{ id: 1715, name: "Ammpanna Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },
+{ id: 1716, name: "Passion-Fruit Mocktail", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Full", price: 55 }] },  
 /* --- MILK SHAKES --- */
-{ id: 1706, name: "Milk Shake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 55 }] },
+{ id: 1706, name: "Milk Shake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 65 }] },
 { id: 1707, name: "Strawberry Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
 { id: 1708, name: "Mango Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
 { id: 1709, name: "Black Currant Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
 { id: 1710, name: "Chocolate Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
+{ id: 1717, name: "Butterscotch Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
+{ id: 1718, name: "Passion-Fruit Milkshake", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 75 }] },
 
 /* --- COLD COFFEE --- */
 { id: 1711, name: "Cold Coffee", category: "Mocktails & Beverages", subCategory: "Veg", variants: [{ label: "Regular", price: 85 }] },
@@ -278,7 +277,6 @@ const products = [
 ];
 
 window.products = products;
-
 
 
 
