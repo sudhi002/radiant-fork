@@ -34,6 +34,7 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
 .container{max-width:var(--max-width);margin:auto;padding:0 20px}
 
 /* NAVBAR */
@@ -207,7 +208,7 @@ body::before {
     height: 70vh;
     transform: translateY(100%);
     border-radius: 20px 20px 0 0;
-    z-index: 1000;
+    z-index: 10;
   }
 
   .cart.active {
@@ -229,6 +230,9 @@ body::before {
 /* PREVENT BACKGROUND SCROLL WHEN CART OPEN */
 body.cart-open {
   overflow: hidden;
+}
+.menu-column {
+  min-width: 0;          /* 🔥 prevents overflow */
 }
 
 </style>
@@ -273,16 +277,19 @@ body.cart-open {
 
 <main class="menu-layout container">
 
-<section>
-  <h2 class="section-title">Our Menu</h2>
-  <div id="menuGrid" class="menu-grid"></div>
-  <div id="pagination" class="pagination"></div>
+  <!-- LEFT COLUMN -->
+  <div class="menu-column">
+    <section>
+      <h2 class="section-title">Our Menu</h2>
+      <div id="menuGrid" class="menu-grid"></div>
+      <div id="pagination" class="pagination"></div>
+    </section>
 
-</section>
-  <section class="container">
-  <h3>Recommended for You</h3>
-  <div id="recommendGrid" class="menu-grid"></div>
-</section>
+    <section>
+      <h3>Recommended for You</h3>
+      <div id="recommendGrid" class="menu-grid"></div>
+    </section>
+  </div>
 
 <aside class="cart" id="cart">
   <div class="cart-header">
