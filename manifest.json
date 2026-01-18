@@ -1,0 +1,21 @@
+{
+    "name": "Radiant Fork",
+    "short_name": "RadiantFork",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f5eedc",
+    "theme_color": "#f5eedc",
+    "icons": [
+        {
+            "src": "assets/images/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+}
