@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ================= CONFIG ================= */
-  const ITEMS_PER_PAGE = 10;
+  const ITEMS_PER_PAGE = 140;
 
   /* ================= STATE ================= */
   let currentPage = 1;
@@ -232,6 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderRecommended();
 
 });
+
 
 
 
