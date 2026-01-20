@@ -458,7 +458,21 @@ body.cart-open{
 <script src="js/menu.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/main.js"></script>
+<script>
+  const searchInput = document.getElementById("search");
+  const menuGrid = document.getElementById("menuGrid");
 
+  if (searchInput && menuGrid) {
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase();
+
+      document.querySelectorAll("#menuGrid .food-card").forEach(card => {
+        const name = card.querySelector("h4")?.innerText.toLowerCase() || "";
+        card.style.display = name.includes(query) ? "" : "none";
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
