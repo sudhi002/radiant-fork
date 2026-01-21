@@ -400,7 +400,11 @@ body.cart-open{
   <div class="cart-header">
     <h3>Your Cart</h3>
     <span id="cartCount">0 items</span>
-    <button class="cart-close" onclick="toggleCart()">✕</button>
+    <button class="cart-close" type="button"
+  onclick="window.location.href='menu.html'">
+  ❌
+</button>
+
   </div>
 
   <div id="cartItems" class="cart-items"></div>
@@ -422,6 +426,7 @@ body.cart-open{
 
 
 <!-- CHECKOUT MODAL -->
+<!-- CHECKOUT MODAL -->
 <div id="checkoutModal" class="modal">
   <div class="modal-box">
 
@@ -436,10 +441,13 @@ body.cart-open{
 
 
       <button class="btn-gold" onclick="goToPayment()">Continue</button>
+  <br><br>
       <button class="btn-cancel" onclick="closeCheckout()">Cancel</button>
     </div>
-
-    <div id="step-payment" class="hidden">
+<br><br><br>
+<hr>
+<hr>
+  <div id="step-payment" class="hidden">
       <h3>Payment Method</h3>
       <label><input type="radio" name="payment" value="COD" checked> Cash on Delivery</label><br>
       <button class="btn-gold" onclick="handlePayment()">Confirm Order</button>
