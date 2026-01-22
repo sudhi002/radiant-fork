@@ -257,7 +257,7 @@ function sendOrderToWhatsApp(items, paymentMode = "COD", paymentId = null) {
   const addressData = JSON.parse(localStorage.getItem("radiantAddress"));
   const location = addressData?.location;
 
-  const DELIVERY_CHARGE = 10;
+  const DELIVERY_CHARGE = 15;
   const itemsTotal = getTotalPrice();
   const finalTotal = itemsTotal + DELIVERY_CHARGE;
 
