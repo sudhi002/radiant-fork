@@ -261,7 +261,7 @@ function sendOrderToWhatsApp(items, paymentMode = "COD", paymentId = null) {
   const itemsTotal = getTotalPrice();
   const finalTotal = itemsTotal + DELIVERY_CHARGE;
 
-  let msg = `🧾 *Radiant Fork Order*\n\n`;
+  let msg = `🧾 *Radiant Bites Order*\n\n`;
 
   msg += `👤 Name: ${addressData.name}\n`;
   msg += `📞 Phone: ${addressData.phone}\n`;
