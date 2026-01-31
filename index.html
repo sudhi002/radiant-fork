@@ -370,12 +370,71 @@ body::before {
     grid-template-columns: 1fr;
   }
 }
+    /* Lightweight glitch overlay */
+.page-glitch {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  mix-blend-mode: difference;
+  animation: soft-glitch 0.35s infinite;
+}
+
+/* Gentle RGB + movement */
+@keyframes soft-glitch {
+  0% {
+    filter: none;
+    transform: translate(0);
+  }
+  25% {
+    filter: hue-rotate(8deg);
+    transform: translate(-1px, 0);
+  }
+  50% {
+    filter: hue-rotate(-8deg);
+    transform: translate(1px, 0);
+  }
+  75% {
+    filter: none;
+    transform: translate(0, 1px);
+  }
+  100% {
+    filter: none;
+    transform: translate(0);
+  }
+}
+
+/* Micro jitter (very small) */
+body * {
+  animation: soft-jitter 0.28s infinite;
+}
+
+@keyframes soft-jitter {
+  0% { transform: translate(0); }
+  50% { transform: translate(0.6px, -0.6px); }
+  100% { transform: translate(0); }
+}
+
+/* Rare screen tear (very quick) */
+body {
+  animation: tiny-tear 6s infinite;
+}
+
+@keyframes tiny-tear {
+  0% { clip-path: inset(0 0 0 0); }
+  1% { clip-path: inset(8% 0 75% 0); }
+  2% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
 
 
   </style>
 </head>
 
 <body>
+  <div class="page-glitch"></div>
+
 
 <header class="navbar">
   <div class="container nav-inner">
