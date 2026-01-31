@@ -370,42 +370,6 @@ body::before {
     grid-template-columns: 1fr;
   }
 }
-    .food-flag {
-  position: fixed;
-  top: 120px;
-  right: 0;
-  background: linear-gradient(135deg, #ff4d4d, #c62828);
-  color: #fff;
-  padding: 18px 26px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 12px 0 0 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-  z-index: 9999;
-  animation: pulseFlag 1.8s infinite;
-}
-
-.food-flag span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-@keyframes pulseFlag {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(-6px); }
-  100% { transform: translateX(0); }
-}
-
-/* Mobile tweak */
-@media (max-width: 768px) {
-  .food-flag {
-    font-size: 15px;
-    padding: 14px 20px;
-    top: 90px;
-  }
-}
 
 
   </style>
@@ -506,10 +470,6 @@ body::before {
 
   </div>
 </section>
-  <div class="food-flag">
-  ❌🍔 Food Sucks? <span>Check the Emoji 😏🔥</span>
-</div>
-
 
 <section id="about" class="section">
   <div class="container about-grid">
