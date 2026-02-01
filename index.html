@@ -380,23 +380,23 @@ body::before {
   animation: soft-glitch 0.35s infinite;
 }
 
-/* Gentle RGB + movement */
+/* Gentle RGB + movement (FASTER) */
 @keyframes soft-glitch {
   0% {
     filter: none;
     transform: translate(0);
   }
-  25% {
-    filter: hue-rotate(8deg);
-    transform: translate(-1px, 0);
+  20% {
+    filter: hue-rotate(12deg);
+    transform: translate(-1.5px, 0);
   }
-  50% {
-    filter: hue-rotate(-8deg);
-    transform: translate(1px, 0);
+  40% {
+    filter: hue-rotate(-12deg);
+    transform: translate(1.5px, 0);
   }
-  75% {
-    filter: none;
-    transform: translate(0, 1px);
+  60% {
+    filter: hue-rotate(6deg);
+    transform: translate(0, 1.5px);
   }
   100% {
     filter: none;
@@ -404,28 +404,42 @@ body::before {
   }
 }
 
-/* Micro jitter (very small) */
+/* Apply glitch faster */
+.glitch {
+  animation: soft-glitch 0.45s infinite linear;
+}
+
+/* Micro jitter (FASTER + SMOOTHER) */
 body * {
-  animation: soft-jitter 0.28s infinite;
+  animation: soft-jitter 0.14s infinite alternate;
 }
 
 @keyframes soft-jitter {
   0% { transform: translate(0); }
-  50% { transform: translate(0.6px, -0.6px); }
+  50% { transform: translate(0.8px, -0.8px); }
   100% { transform: translate(0); }
 }
 
-/* Rare screen tear (very quick) */
+/* Rare screen tear (MORE FREQUENT) */
 body {
-  animation: tiny-tear 6s infinite;
+  animation: tiny-tear 3s infinite;
 }
 
 @keyframes tiny-tear {
-  0% { clip-path: inset(0 0 0 0); }
-  1% { clip-path: inset(8% 0 75% 0); }
-  2% { clip-path: inset(0 0 0 0); }
-  100% { clip-path: inset(0 0 0 0); }
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  0.5% {
+    clip-path: inset(10% 0 70% 0);
+  }
+  1% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
 }
+
 
 
 
